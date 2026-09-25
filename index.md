@@ -6,6 +6,8 @@ I am currently completing my Bachelor of Science in Computer Science with a conc
 
 ## Code Review
 
+I completed a code review of the artifacts selected for my ePortfolio. In the review, I discuss the original projects, areas for improvement, and the enhancements I planned to make.
+
 [Watch My Code Review on YouTube](https://youtu.be/yNWTr3VL82Q?si=dhwXgj3HLGFskzEf)
 
 ## Software Design and Engineering
