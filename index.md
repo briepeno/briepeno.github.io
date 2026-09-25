@@ -6,7 +6,7 @@ I am currently completing my Bachelor of Science in Computer Science with a conc
 
 ## Code Review
 
-[View my Code Review](#)
+[Watch My Code Review on YouTube](https://youtu.be/yNWTr3VL82Q?si=dhwXgj3HLGFskzEf)
 
 ## Software Design and Engineering
 
