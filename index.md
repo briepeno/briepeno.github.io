@@ -42,19 +42,32 @@
 <p>My original plan connected this enhancement to Course Outcomes 3, 4, and 5, and those outcomes still fit the completed work. The progress calculations address Outcome 3 because they handle weight loss, weight gain, missing goals, and different amounts of weight history. Outcome 4 is covered through the way Java, Android, SQLite, RecyclerView, SharedPreferences, SMS notifications, and the chart work together. I decided to build the line chart myself instead of adding a library because the app only needed a basic visualization. For Outcome 5, I focused on checking user input before it reached the database and handling missing information without causing the app to crash. Passwords are still stored in plain text, so hashing remains an important security improvement for a future version.</p>
 <p>The biggest lesson came from working with the same data in different ways. The history list needs the newest entries first, while the chart and progress calculations need them from oldest to newest. I also learned that refreshing a RecyclerView does not automatically reload its data. The adapter had to retrieve the updated records before the display could actually change. Moving the calculation logic out of MainActivity made those rules easier to test without involving the screen itself.</p>
 <p>Navigation caused more trouble than I expected. Each screen needed to behave the same way, and at one point the Settings page would not open correctly. I also had to make sure the dashboard refreshed whenever I returned to it. Another decision involved password hashing. I know storing plain-text passwords would not be acceptable in a production application, but hashing was outside the scope of my original enhancement. Since this app is a prototype and I had limited time, I focused on the features I had already planned and left hashing as future work.</p>
-<p>Cleaning up the repeated code was another challenge. At first, I thought condensing it would simply mean using fewer lines. Instead, I ended up movisp;&nbsp;ng navigation, validation, and calculations into separate classes and keeping the SMS logic in one place. Some parts became longer, but the overall project became easier to follow because each class had a clearer job.</p>
+<p>Cleaning up the repeated code was another challenge. At first, I thought condensing it would simply mean using fewer lines. Instead, I ended up moving navigation, validation, and calculations into separate classes and keeping the SMS logic in one place. Some parts became longer, but the overall project became easier to follow because each class had a clearer job.</p>
 <p>
-<a href="https://github.com/briepeno/briepeno.github.io/blob/main/WeightTrackingApplication_Original.zip">
-  Original Artifact
-</a></p>
-<p>
-<a href="https://github.com/briepeno/briepeno.github.io/blob/main/WeightTrackingApplication_Enhanced.zip">
-  Enhanced Artifact
+<a href="https://github.com/briepeno/briepeno.github.io/tree/main/WeightTracking_README">
+  Weight Tracking Application Project
 </a></p>
 
 ## Algorithms and Data Structures
 
-Artifact information will be added here.
+<p>For my algorithms and data structures enhancement, I used the service application I created in CS 320: Software Testing, Automation, and Quality Assurance. The application manages contacts, tasks, and appointments, with separate classes for storing and validating each type of record. The original project used ArrayLists to store records and searched through them by ID whenever it needed to find one.</p>
+
+<p>I chose this project because it gave me an opportunity to improve an application that already worked. The original search method had to check records one at a time, which could become inefficient as the list grew. For the enhancement, I replaced the ArrayList storage with a binary search tree (BST). I created one reusable BST class for contacts, tasks, and appointments, then updated the service classes to use it. The tree supports insertion, searching, deletion, and in-order traversal based on each record's unique ID. I also handled the different deletion cases, including nodes with no children, one child, or two children.</p>
+
+<p>This project allowed me to apply concepts I had learned in CS 300 to a Java application. My earlier work with data structures was in C++, so using a BST in a different language helped me understand how those concepts transfer between projects. I also added JUnit tests for the tree to check insertion, duplicate IDs, searching, deletion, and traversal. After making the changes, I reran the original tests to make sure the new data structure did not break the existing functionality.</p>
+
+<p>I also wanted to measure whether the BST actually improved performance. I tested both approaches using 10,000 records and 20,000 searches. The ArrayList search took 267.271 milliseconds, while the BST took 10.046 milliseconds. That made the BST approximately 26.60 times faster in my test. Both approaches successfully completed all 20,000 searches, so the change improved performance without affecting the results. This helped me understand the practical difference between an O(n) search and the average O(log n) search time of a reasonably balanced BST. A basic BST is not self-balancing, though, so its performance can decline if the tree becomes one-sided.</p>
+
+<p>One challenge I encountered was a NullPointerException in my in-order traversal method. The recursive method continued until it reached a null node, but I had not handled that case correctly. I fixed it by adding a base case that returns when the node is null. This reminded me how important it is to test edge cases, especially when working with recursive methods. I also learned that replacing a data structure affects more than storage. I had to update the service classes and verify that searching, deleting, and the existing functionality still worked correctly.</p>
+
+<p>The feedback I received on the project was positive, and I was told that I did not need to make additional changes. I still tested the enhancement and measured its performance so I could verify the results myself. That process reinforced the importance of checking my work rather than assuming a change is successful simply because the code compiles.</p>
+
+<p>This enhancement helped me apply data structures and algorithms to improve the efficiency of an existing application. By replacing the ArrayList with a binary search tree, I was able to reduce search time while keeping the application's functionality intact. I also applied what I learned about data structures in an earlier course to a Java project and used JUnit testing to verify that the changes worked correctly. Comparing the performance of both approaches gave me measurable evidence of the improvement and helped me better understand how technical decisions affect an application's performance.</p>
+
+<p>
+<a href="https://github.com/briepeno/briepeno.github.io/tree/main/AppointmentService_README">
+  Appointment Services Project
+</a></p>
 
 ## Databases
 
