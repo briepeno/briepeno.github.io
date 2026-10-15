@@ -67,7 +67,7 @@ The repository contains the original and enhanced versions of the project.
 ### Requirements
 
 - Java Development Kit (JDK)
-- A Java IDE such as Eclipse, IntelliJ IDEA, or VS Code
+- A Java IDE such as Eclipse or VS Code
 - JUnit for running automated tests
 
 ### Setup Instructions
