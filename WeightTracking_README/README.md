@@ -16,7 +16,7 @@ The enhanced application includes:
 - **Weight History Chart:** A line chart allows users to visualize weight changes over time.
 - **Goal Management:** Users can establish and update their target weight.
 - **SMS Notifications:** Users can enable or disable SMS notifications and enter a phone number for weight goal notifications.
-- **Input Validation:** Weight entries are restricted to a valid range of 50.0 to 1,000.0 pounds, with additional checks for invalid input.
+- **Input Validation:** Weight entries are restricted to a valid range of 50 to 1,000 pounds, with additional checks for invalid input.
 - **Improved Navigation:** Consistent bottom navigation allows users to move between application screens.
 
 ## Technologies Used
