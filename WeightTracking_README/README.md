@@ -4,7 +4,7 @@
 
 The Weight Tracking Application is an Android mobile application I originally developed for CS 360: Mobile Architecture and Programming at Southern New Hampshire University. The application allows users to record their weight, monitor changes over time, and track progress toward a personal weight goal.
 
-I developed the application using **Java, Android Studio, and SQLite** for local data storage. For my CS 499 Computer Science Capstone, I enhanced the original application to improve its functionality, input validation, navigation, and overall user experience.
+I developed the application using Java, Android Studio, and SQLite for local data storage. For my CS 499 Computer Science Capstone, I enhanced the original application to improve its functionality, input validation, navigation, and overall user experience.
 
 ## Application Features
 
@@ -56,4 +56,4 @@ To open and run the application, you will need:
 1. Download the ZIP file for the version you want to review.
 2. Extract the ZIP file to a folder on your computer.
 3. Open Android Studio.
-4. Select **Open** from the Android Studio welcome screen, or select **File > Open** if Android
+4. Select **File > Open** 
