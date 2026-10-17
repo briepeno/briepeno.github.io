@@ -4,7 +4,7 @@
 
 The Animal Shelter Dashboard is a Python-based application I originally developed for CS 340: Client/Server Development at Southern New Hampshire University. The application allows users to search animal shelter records, view information in a table, and explore the data through interactive visualizations.
 
-I developed the application using **Python, MongoDB, and Jupyter Notebook**. For my CS 499 Computer Science Capstone, I enhanced the original dashboard by adding full CRUD functionality, user authentication, improved input validation, and additional data management features.
+I developed the application using Python, MongoDB, and Jupyter Notebook. For my CS 499 Computer Science Capstone, I enhanced the original dashboard by adding full CRUD functionality, user authentication, improved input validation, and additional data management features.
 
 ## Application Features
 
