@@ -96,9 +96,3 @@ Testing included:
 - Confirming that the existing service functionality continued to work.
 
 I also performed a benchmark comparing the search performance of the original and enhanced implementations.
-
-## Project Purpose
-
-This project demonstrates my ability to evaluate an existing application and improve its performance through the selection and implementation of an appropriate data structure.
-
-The enhancement strengthened my understanding of Java generics, binary search tree operations, algorithm efficiency, and automated testing. It also provided measurable evidence of how a change in data structure can affect application performance.
