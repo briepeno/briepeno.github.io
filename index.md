@@ -62,7 +62,6 @@
 <p>One area I did not fully address was password security. Although I strengthened password requirements and input validation, passwords are still stored in plain text. I understand that this would not be acceptable in a production application and that passwords should be securely hashed. I considered adding this improvement but decided to stay within the scope of my planned enhancement. This is something I would address in a future version.</p>
 
 <p>Overall, this enhancement gave me more experience working with an existing codebase and improving how its components are organized. I learned that adding features is only part of software development. Making sure those features work together, handling unexpected inputs, and keeping the code manageable are just as important. The application is more useful than the original version, and I have a better understanding of how to approach similar problems in future projects.</p>
-<p>
 
 ## Algorithms and Data Structures
 
